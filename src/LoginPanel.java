@@ -24,8 +24,8 @@ public class LoginPanel extends JFrame {
         loginBox.setBackground(Color.WHITE);
         loginBox.setLayout(new BoxLayout(loginBox, BoxLayout.Y_AXIS));
         loginBox.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(new Color(200, 200, 200), 1),
-                BorderFactory.createEmptyBorder(20, 70, 20, 70))); // Outer and inner padding
+                BorderFactory.createLineBorder(new Color(200, 200, 200), 0),
+                BorderFactory.createEmptyBorder(50, 70, 20, 70))); // Outer and inner padding
         loginBox.setAlignmentX(Component.LEFT_ALIGNMENT);
 
         // Logo
@@ -97,7 +97,7 @@ public class LoginPanel extends JFrame {
         forgotPasswordLabel.setHorizontalAlignment(SwingConstants.RIGHT);
         rememberForgotPanel.add(forgotPasswordLabel);
 
-        loginBox.add(rememberForgotPanel);
+//        loginBox.add(rememberForgotPanel);
 
         loginBox.add(Box.createRigidArea(new Dimension(0, 20))); // Spacing
 
